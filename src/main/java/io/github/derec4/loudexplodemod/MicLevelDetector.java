@@ -1,43 +1,59 @@
 package io.github.derec4.loudexplodemod;
 
+import com.mojang.logging.LogUtils;
+import org.slf4j.Logger;
+
 import javax.sound.sampled.*;
+import java.io.ByteArrayOutputStream;
 
 public class MicLevelDetector {
-    private static final float THRESHOLD = 0.8f; // Adjust threshold as needed
+    private static final double DB_THRESHOLD = 80.0;
+    private static final int BUFFER_SIZE = 1024;
+    private static final Logger LOGGER = LogUtils.getLogger();
+    private volatile boolean micLevelHigh = false;
+    private TargetDataLine microphone;
 
-    public boolean isMicLevelHigh() {
-        try {
-            AudioFormat format = new AudioFormat(16000, 8, 1, true, true);
-            DataLine.Info info = new DataLine.Info(TargetDataLine.class, format);
-            TargetDataLine microphone = (TargetDataLine) AudioSystem.getLine(info);
-            microphone.open(format);
-            microphone.start();
+    public MicLevelDetector() {
+        startListening();
+    }
 
-            byte[] buffer = new byte[1024];
-            int bytesRead = microphone.read(buffer, 0, buffer.length);
-            float[] samples = new float[bytesRead / 2];
+    private void startListening() {
+        new Thread(() -> {
+            AudioFormat format = new AudioFormat(44100, 16, 1, true, true);
+            try {
+                microphone = AudioSystem.getTargetDataLine(format);
+                microphone.open(format);
+                microphone.start();
 
-            for (int i = 0, s = 0; i < bytesRead; ) {
-                int sample = 0;
+                byte[] buffer = new byte[BUFFER_SIZE];
+                ByteArrayOutputStream out = new ByteArrayOutputStream();
+                int numBytesRead;
 
-                sample |= buffer[i++] & 0xFF; // (reverse these two lines
-                sample |= buffer[i++] << 8;   //  if the format is wrong)
+                while (true) {
+                    numBytesRead = microphone.read(buffer, 0, buffer.length);
+                    out.write(buffer, 0, numBytesRead);
 
-                samples[s++] = sample / 32768f;
+                    double rms = calculateRMS(buffer, numBytesRead);
+                    double db = 20 * Math.log10(rms);
+
+                    micLevelHigh = db > DB_THRESHOLD;
+
+                    out.reset();
+                }
+            } catch (LineUnavailableException e) {
+                LOGGER.error("Microphone line unavailable", e);
             }
+        }).start();
+    }
 
-            float level = 0;
-            for (float sample : samples) {
-                level += sample * sample;
-            }
-
-            level = (float) Math.sqrt(level / samples.length);
-
-            return level > THRESHOLD;
-        } catch (LineUnavailableException e) {
-            e.printStackTrace();
-            return false;
+    private double calculateRMS(byte[] buffer, int numBytesRead) {
+        long sum = 0;
+        for (int i = 0; i < numBytesRead; i += 2) {
+            int sample = buffer[i + 1] << 8 | buffer[i] & 0xFF;
+            sum += (long) sample * sample;
         }
+        double mean = sum / (numBytesRead / 2.0);
+        return Math.sqrt(mean);
     }
 
     public boolean isMicLevelHigh() {
