@@ -35,7 +35,7 @@ public class MicLevelListener {
     private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z) {
         if (micLevelDetector.isMicLevelHigh()) {
             if (world instanceof Level level && !level.isClientSide())
-//                level.explode(null, x, y, z, 5, Level.ExplosionInteraction.TNT);
+                level.explode(null, x, y, z, 5, Level.ExplosionInteraction.TNT);
             {
                 System.out.println("EXPLODE");
             }

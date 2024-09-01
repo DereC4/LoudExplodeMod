@@ -7,7 +7,7 @@ import javax.sound.sampled.*;
 import java.io.ByteArrayOutputStream;
 
 public class MicLevelDetector {
-    private static final double DB_THRESHOLD = 80.0;
+    private static final double DB_THRESHOLD = 85.0;
     private static final int BUFFER_SIZE = 1024;
     private static final Logger LOGGER = LogUtils.getLogger();
     private volatile boolean micLevelHigh = false;
