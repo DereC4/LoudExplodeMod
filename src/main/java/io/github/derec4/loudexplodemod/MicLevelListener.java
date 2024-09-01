@@ -1,5 +1,6 @@
 package io.github.derec4.loudexplodemod;
 
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.player.Player;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -25,19 +26,24 @@ public class MicLevelListener {
 
     @SubscribeEvent
     public static void onPlayerTick(PlayerTickEvent.Post event) {
-        execute(event, event.getEntity().level(), event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ());
+        execute(event, event.getEntity().level(), event.getEntity().getX(), event.getEntity().getY(),
+                event.getEntity().getZ(), event.getEntity());
     }
 
-    public static void execute(LevelAccessor world, double x, double y, double z) {
-        execute(null, world, x, y, z);
+    public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
+        execute(null, world, x, y, z, entity);
     }
 
-    private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z) {
+    private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z,
+                                Entity entity) {
         if (micLevelDetector.isMicLevelHigh()) {
-            if (world instanceof Level level && !level.isClientSide())
-                level.explode(null, x, y, z, 5, Level.ExplosionInteraction.TNT);
-            {
-                System.out.println("EXPLODE");
+            if (entity instanceof Player player) {
+                if (world instanceof Level level && !level.isClientSide()) {
+                    if (!player.isSpectator() && player.isAlive()) {
+                        level.explode(null, x, y, z, 5, Level.ExplosionInteraction.TNT);
+                        System.out.println("EXPLODE");
+                    }
+                }
             }
         }
     }
