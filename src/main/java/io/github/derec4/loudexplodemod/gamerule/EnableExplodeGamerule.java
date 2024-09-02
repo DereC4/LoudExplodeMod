@@ -8,10 +8,10 @@ import net.minecraft.world.level.GameRules;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public class EnableExplodeGamerule {
+    public static GameRules.Key<GameRules.BooleanValue> EXPLODE_GAMERULE;
 
     @SubscribeEvent
     public static void registerGameRules(FMLCommonSetupEvent event) {
-        MACEDEBUGMODE = GameRules.register("maceDebugMode", GameRules.Category.UPDATES, GameRules.BooleanValue.create(false));
-        MACE_DAMAGE_CAP = GameRules.register("maceDamageCap", GameRules.Category.UPDATES, GameRules.IntegerValue.create(-1));
+        EXPLODE_GAMERULE = GameRules.register("explodeGamerule", GameRules.Category.PLAYER, GameRules.BooleanValue.create(true));
     }
 }

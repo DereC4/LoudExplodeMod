@@ -1,5 +1,6 @@
 package io.github.derec4.loudexplodemod;
 
+import io.github.derec4.loudexplodemod.gamerule.EnableExplodeGamerule;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.player.Player;
 import net.neoforged.api.distmarker.Dist;
@@ -38,7 +39,7 @@ public class MicLevelListener {
                                 Entity entity) {
         if (micLevelDetector.isMicLevelHigh()) {
             if (entity instanceof Player player) {
-                if (world instanceof Level level && !level.isClientSide()) {
+                if (world instanceof Level level && !level.isClientSide() && level.getGameRules().getBoolean(EnableExplodeGamerule.EXPLODE_GAMERULE)) {
                     if (!player.isSpectator() && player.isAlive()) {
                         level.explode(null, x, y, z, 5, Level.ExplosionInteraction.TNT);
                         System.out.println("EXPLODE");
