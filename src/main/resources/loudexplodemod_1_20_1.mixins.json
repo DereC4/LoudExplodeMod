@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "io.github.derec4.loudexplodemod_1_20_1.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "loudexplodemod_1_20_1.refmap.json",
+  "mixins": [
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
