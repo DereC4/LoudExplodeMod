@@ -1,8 +1,0 @@
-/gamerule explodeGamerule
-/advancement revoke Dev everything
-/tp 0 90 0
-/gamerule explodeGamerule false
-/fill -76 79 -8
-/fill -76 79 -8 -12 68 74 tnt
-/fill -76 79 -8 ~ ~ ~ tnt
-/summon wither
