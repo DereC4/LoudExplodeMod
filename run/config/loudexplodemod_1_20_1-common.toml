@@ -1,6 +1,4 @@
-
-[mic]
-	#The decibel threshold for triggering the explosion
-	#Range: 0.0 ~ 120.0
-	db_threshold = 85.0
+#The decibel threshold for microphone input to trigger the explosion
+#Range: 0.0 ~ 120.0
+dbThreshold = 85
 
