@@ -14,7 +14,7 @@ import org.slf4j.Logger;
 
 import javax.annotation.Nullable;
 
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+@Mod.EventBusSubscriber(modid = "loudexplodemod_1_20_1", bus = Mod.EventBusSubscriber.Bus.FORGE, value = Dist.CLIENT)
 public class MicLevelListener {
     private static final Logger LOGGER = LogUtils.getLogger();
     private static final MicLevelDetector micLevelDetector = new MicLevelDetector();
@@ -33,7 +33,7 @@ public class MicLevelListener {
                 if (world instanceof Level level && !level.isClientSide && level.getGameRules().getBoolean(EnableExplodeGamerule.EXPLODE_GAMERULE)) {
                     if (!player.isSpectator() && player.isAlive()) {
                         level.explode(null, x, y, z, 5, Level.ExplosionInteraction.TNT);
-                        LOGGER.info("EXPLODE");
+//                        LOGGER.info("EXPLODE");
                     }
                 }
             }

@@ -1,0 +1,21 @@
+{
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2024-09-03 00:51:16 -0500"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:snowy_slopes": "2024-09-03 00:53:34 -0500",
+      "minecraft:cherry_grove": "2024-09-03 00:52:08 -0500",
+      "minecraft:river": "2024-09-03 00:52:10 -0500",
+      "minecraft:grove": "2024-09-03 00:51:22 -0500",
+      "minecraft:flower_forest": "2024-09-03 00:52:12 -0500",
+      "minecraft:meadow": "2024-09-03 00:51:36 -0500",
+      "minecraft:plains": "2024-09-03 00:52:05 -0500"
+    },
+    "done": false
+  },
+  "DataVersion": 3465
+}

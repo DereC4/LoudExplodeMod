@@ -78,6 +78,10 @@ public class Loudexplodemod_1_20_1 {
 
         // Register our mod's ForgeConfigSpec so that Forge can create and load the config file for us
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+        MinecraftForge.EVENT_BUS.register(MicLevelListener.class);
+        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON,
+                io.github.derec4.loudexplodemod_1_20_1.ModConfig.LOUD_EXPLODE_SPEC);
+
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
