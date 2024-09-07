@@ -1,4 +1,4 @@
 #The decibel threshold for microphone input to trigger the explosion
 #Range: 0.0 ~ 120.0
-dbThreshold = 85
+dbThreshold = 86.5
 

@@ -10,6 +10,7 @@ import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import com.mojang.logging.LogUtils;
+import net.minecraftforge.fml.event.config.ModConfigEvent;
 import org.slf4j.Logger;
 
 import javax.annotation.Nullable;
@@ -30,12 +31,36 @@ public class MicLevelListener {
                 micLevelDetector = new MicLevelDetector();
                 isMicLevelDetectorInitialized = true;
             }
-
-            // Only run the detection logic if the mic level detector has been initialized
+//            micLevelDetector.setDB_THRESHOLD(player.level().getGameRules().getInt(EnableExplodeGamerule.MIC_THRESHOLD_GAMERULE));
             if (micLevelDetector != null) {
+                double dbThreshold = Config.dbThreshold;
+                micLevelDetector.setDB_THRESHOLD(dbThreshold);
                 execute(player.level(), player.getX(), player.getY(), player.getZ(), player);
             }
         }
+    }
+
+    @SubscribeEvent
+    public static void onReload(final ModConfigEvent.Reloading event) {
+        if (micLevelDetector == null) {
+            return;
+        }
+
+        double dbThreshold = Config.dbThreshold;
+        System.out.println("Config reloaded: dbThreshold = " + dbThreshold);
+        micLevelDetector.setDB_THRESHOLD(dbThreshold);
+    }
+
+    @SubscribeEvent
+    static void onLoad(final ModConfigEvent event) {
+        System.out.println("TEMPTEMPTEMP");
+        if (micLevelDetector == null) {
+            return;
+        }
+
+        double dbThreshold = Config.dbThreshold;
+        System.out.println("Config reloaded: dbThreshold = " + dbThreshold);
+        micLevelDetector.setDB_THRESHOLD(dbThreshold);
     }
 
     private static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {

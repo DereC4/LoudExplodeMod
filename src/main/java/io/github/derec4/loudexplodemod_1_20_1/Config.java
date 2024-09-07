@@ -48,6 +48,6 @@ public class Config {
 
         // Load the DB_THRESHOLD value
         dbThreshold = DB_THRESHOLD.get();
-        System.out.println("ABCDEFG" + dbThreshold);
+        System.out.println("ABCDEFG " + dbThreshold);
     }
 }
