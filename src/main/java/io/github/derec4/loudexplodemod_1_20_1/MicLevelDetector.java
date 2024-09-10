@@ -7,9 +7,9 @@ import javax.sound.sampled.*;
 import java.io.ByteArrayOutputStream;
 
 public class MicLevelDetector {
-    private double DB_THRESHOLD = Config.dbThreshold;
+    private double dbThreshold = Config.dbThreshold;
 //    private double DB_THRESHOLD;
-    private static final int BUFFER_SIZE = 1024;
+    private static final int BUFFER_SIZE = 4096;
     private static final Logger LOGGER = LogUtils.getLogger();
     private volatile boolean micLevelHigh = false;
     private TargetDataLine microphone;
@@ -17,8 +17,9 @@ public class MicLevelDetector {
     public MicLevelDetector() {
         startListening();
     }
+
     public MicLevelDetector(double threshold) {
-//        DB_THRESHOLD = threshold;
+        dbThreshold = threshold;
         startListening();
     }
 
@@ -42,9 +43,9 @@ public class MicLevelDetector {
                     double db = 20 * Math.log10(rms);
 
                     System.out.println("Your Volume " + db);
-                    System.out.println("Threshold Value Set " + DB_THRESHOLD);
+                    System.out.println("Threshold Value Set " + dbThreshold);
 
-                    micLevelHigh = db > DB_THRESHOLD;
+                    micLevelHigh = db > dbThreshold;
 
                     out.reset();
                 }
@@ -68,7 +69,7 @@ public class MicLevelDetector {
         return micLevelHigh;
     }
 
-    public void setDB_THRESHOLD(double threshold) {
-        DB_THRESHOLD = threshold;
+    public void setDbThreshold(double threshold) {
+        dbThreshold = threshold;
     }
 }
