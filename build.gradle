@@ -2,6 +2,7 @@ buildscript {
     repositories {
         // These repositories are only for Gradle plugins, put any other repositories in the repository block further below
         maven { url = 'https://repo.spongepowered.org/repository/maven-public/' }
+        maven { url "https://maven.shedaniel.me/" }
         mavenCentral()
     }
     dependencies {
@@ -165,6 +166,7 @@ dependencies {
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
 
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
+    implementation fg.deobf("me.shedaniel.cloth:cloth-config-forge:11.1.118")
 
 }
 
