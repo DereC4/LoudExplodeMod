@@ -16,7 +16,7 @@ import org.slf4j.Logger;
 @Mod.EventBusSubscriber(modid = "loudexplodemod_1_20_1", bus = Mod.EventBusSubscriber.Bus.FORGE, value = Dist.CLIENT)
 public class MicLevelListener {
     private static final Logger LOGGER = LogUtils.getLogger();
-    private static MicLevelDetector micLevelDetector;
+    private static MicLevelDetectorNew micLevelDetector;
     private static boolean isMicLevelDetectorInitialized = false;
 
     @SubscribeEvent
@@ -26,13 +26,13 @@ public class MicLevelListener {
 
             // Initialize mic level detector only if it's not already initialized and the player is in a world
             if (!isMicLevelDetectorInitialized && player.level() != null) {
-                micLevelDetector = new MicLevelDetector();
+                micLevelDetector = new MicLevelDetectorNew();
                 isMicLevelDetectorInitialized = true;
             }
 //            micLevelDetector.setDB_THRESHOLD(player.level().getGameRules().getInt(EnableExplodeGamerule.MIC_THRESHOLD_GAMERULE));
             if (micLevelDetector != null) {
                 double dbThreshold = Config.dbThreshold;
-                micLevelDetector.setDbThreshold(dbThreshold);
+                micLevelDetector.setDB_THRESHOLD(dbThreshold);
                 execute(player.level(), player.getX(), player.getY(), player.getZ(), player);
             }
         }
@@ -46,7 +46,7 @@ public class MicLevelListener {
 
         double dbThreshold = Config.dbThreshold;
         System.out.println("Config reloaded: dbThreshold = " + dbThreshold);
-        micLevelDetector.setDbThreshold(dbThreshold);
+        micLevelDetector.setDB_THRESHOLD(dbThreshold);
     }
 
     @SubscribeEvent
@@ -58,7 +58,7 @@ public class MicLevelListener {
 
         double dbThreshold = Config.dbThreshold;
         System.out.println("Config reloaded: dbThreshold = " + dbThreshold);
-        micLevelDetector.setDbThreshold(dbThreshold);
+        micLevelDetector.setDB_THRESHOLD(dbThreshold);
     }
 
     private static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
