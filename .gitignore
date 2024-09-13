@@ -102,3 +102,42 @@ gradle-app.setting
 .project
 # JDT-specific (Eclipse Java Development Tools)
 .classpath
+
+## Based on GitHub's Eclipse .gitignore
+
+run/
+.gradle/
+build/
+
+## IntelliJ IDEA
+
+.idea/
+*.iml
+*.ipr
+
+## Eclipse
+
+eclipse/
+*.pydevproject
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# CDT-specific
+.cproject
+
+# PDT-specific
+.buildpath
