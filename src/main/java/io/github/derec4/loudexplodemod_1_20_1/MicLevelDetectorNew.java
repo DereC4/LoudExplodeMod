@@ -9,7 +9,7 @@ import java.util.Arrays;
 
 public class MicLevelDetectorNew {
     private double dbThreshold = Config.dbThreshold;  // Default from config
-    private static final int BUFFER_SIZE = 4096;
+    private static final int BUFFER_SIZE = 1024;
     private static final int SAMPLE_RATE = 16000; // Adapted from AudioDetector
     private static final Logger LOGGER = LogUtils.getLogger();
     private volatile boolean micLevelHigh = false;
