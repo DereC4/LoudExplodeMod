@@ -42,16 +42,17 @@ public class MicLevelDetectorNew {
                 byte[] buffer = new byte[BUFFER_SIZE];
                 ByteArrayOutputStream out = new ByteArrayOutputStream();
                 short[] shortBuffer;
-
+                int numBytesRead;
                 while (true) {
+                    numBytesRead = microphone.read(buffer, 0, buffer.length);
                     shortBuffer = Utils.bytesToShorts(buffer);
 
                     double highestDb = Utils.getHighestAudioLevel(shortBuffer);
+                    micLevelHigh = highestDb >= dbThreshold;
 
                     System.out.println("Your Volume: " + highestDb + " dB");
                     System.out.println("Threshold Value Set: " + dbThreshold);
 
-                    micLevelHigh = highestDb >= dbThreshold;
 
                     out.reset(); // Reset buffer after each read
                 }

@@ -23,7 +23,8 @@ public class Config {
 //    private static final ForgeConfigSpec.ConfigValue<List<? extends String>> ITEM_STRINGS = BUILDER.comment("A list of items to log on common setup.").defineListAllowEmpty("items", List.of("minecraft:iron_ingot"), Config::validateItemName);
 
     // New config option for DB_THRESHOLD
-    static final ForgeConfigSpec.DoubleValue DB_THRESHOLD = BUILDER.comment("The decibel threshold for microphone input to trigger the explosion").defineInRange("dbThreshold", 85.0, 0.0, 120.0);
+    static final ForgeConfigSpec.DoubleValue DB_THRESHOLD = BUILDER.comment("The decibel threshold for microphone " +
+            "input to trigger the explosion").defineInRange("dbThreshold", -1.0, -30.0, 30.0);
 
     // Build the config spec
     static final ForgeConfigSpec SPEC = BUILDER.build();
