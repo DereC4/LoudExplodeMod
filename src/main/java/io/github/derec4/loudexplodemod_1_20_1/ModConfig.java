@@ -10,7 +10,7 @@ public class ModConfig {
 
     static {
         DB_THRESHOLD = BUILDER.comment("The decibel threshold for triggering the explosion")
-                .defineInRange("mic.db_threshold", 85.0, 0.0, 120.0);
+                .defineInRange("mic.db_threshold", -1.0, -30.0, 30.0);
 
         LOUD_EXPLODE_SPEC = BUILDER.build();
     }

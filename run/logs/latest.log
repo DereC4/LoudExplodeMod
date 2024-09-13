@@ -1,809 +1,99 @@
-[11Sep2024 00:59:06.698] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeclientuserdev, --version, MOD_DEV, --assetIndex, 5, --assetsDir, C:\Users\derex\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.3.7, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mixin.config, loudexplodemod_1_20_1.mixins.json]
-[11Sep2024 00:59:06.711] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.6 by Eclipse Adoptium; OS Windows 10 arch amd64 version 10.0
-[11Sep2024 00:59:06.828] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
-[11Sep2024 00:59:07.103] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.6
-[11Sep2024 00:59:07.906] [main/INFO] [EARLYDISPLAY/]: Requested GL version 4.6 got version 4.6
-[11Sep2024 00:59:08.026] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/derex/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23129!/ Service=ModLauncher Env=CLIENT
-[11Sep2024 00:59:08.113] [pool-2-thread-1/INFO] [EARLYDISPLAY/]: GL info: NVIDIA GeForce RTX 3060 Laptop GPU/PCIe/SSE2 GL version 4.6.0 NVIDIA 556.12, NVIDIA Corporation
-[11Sep2024 00:59:08.383] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\derex\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.3.7\5d72a04334eea2494912f0d91216648462bb32c3\javafmllanguage-1.20.1-47.3.7.jar is missing mods.toml file
-[11Sep2024 00:59:08.391] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\derex\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.3.7\74fd0ee16e74766d45d2efe7c74b6d0e121677df\lowcodelanguage-1.20.1-47.3.7.jar is missing mods.toml file
-[11Sep2024 00:59:08.399] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\derex\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.3.7\cf753f5bc19311c127ea07e1ee43d5f9477df22b\mclanguage-1.20.1-47.3.7.jar is missing mods.toml file
-[11Sep2024 00:59:08.407] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\derex\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.3.7\b6a4840dfdc56e2ae2eccdd1bf233959493d11ea\fmlcore-1.20.1-47.3.7.jar is missing mods.toml file
-[11Sep2024 00:59:08.492] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
-[11Sep2024 00:59:09.751] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeclientuserdev' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, C:\Users\derex\.gradle\caches\forge_gradle\assets, --assetIndex, 5]
-[11Sep2024 00:59:09.826] [main/WARN] [mixin/]: Reference map 'loudexplodemod_1_20_1.refmap.json' for loudexplodemod_1_20_1.mixins.json could not be read. If this is a development environment you can ignore this message
-[11Sep2024 00:59:13.679] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 188 Datafixer optimizations took 109 milliseconds
-[11Sep2024 00:59:15.086] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/derex/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.3.7_mapped_official_1.20.1/forge-1.20.1-47.3.7_mapped_official_1.20.1.jar%23191!/assets/.mcassetsroot' uses unexpected schema
-[11Sep2024 00:59:15.087] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/derex/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.3.7_mapped_official_1.20.1/forge-1.20.1-47.3.7_mapped_official_1.20.1.jar%23191!/data/.mcassetsroot' uses unexpected schema
-[11Sep2024 00:59:15.105] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[11Sep2024 00:59:15.111] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
-[11Sep2024 00:59:15.198] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.1 build 7
-[11Sep2024 00:59:15.468] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.3.7, for MC 1.20.1 with MCP 20230612.114412
-[11Sep2024 00:59:15.470] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.3.7 Initialized
-[11Sep2024 00:59:16.492] [Render thread/INFO] [net.minecraftforge.gametest.ForgeGameTestHooks/]: Enabled Gametest Namespaces: [loudexplodemod_1_20_1]
-[11Sep2024 00:59:16.618] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla, mod_resources
-[11Sep2024 00:59:16.667] [Worker-Main-10/INFO] [io.github.derec4.loudexplodemod_1_20_1.Loudexplodemod_1_20_1/]: HELLO FROM COMMON SETUP
-[11Sep2024 00:59:16.668] [Worker-Main-10/INFO] [io.github.derec4.loudexplodemod_1_20_1.Loudexplodemod_1_20_1/]: DIRT BLOCK >> minecraft:dirt
-[11Sep2024 00:59:16.766] [Worker-Main-14/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-15.0.06.hex, loading
-[11Sep2024 00:59:16.793] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
-[11Sep2024 00:59:16.858] [Worker-Main-15/INFO] [io.github.derec4.loudexplodemod_1_20_1.Loudexplodemod_1_20_1/]: HELLO FROM CLIENT SETUP
-[11Sep2024 00:59:16.858] [Worker-Main-15/INFO] [io.github.derec4.loudexplodemod_1_20_1.Loudexplodemod_1_20_1/]: MINECRAFT NAME >> Dev
-[11Sep2024 00:59:17.290] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: AHEAD Current: 47.3.7 Target: null
-[11Sep2024 00:59:17.563] [Worker-Main-15/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Exception loading blockstate definition: 'loudexplodemod_1_20_1:blockstates/example_block.json' missing model for variant: 'loudexplodemod_1_20_1:example_block#'
-[11Sep2024 00:59:17.572] [Worker-Main-15/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Unable to load model: 'loudexplodemod_1_20_1:example_block#inventory' referenced from: loudexplodemod_1_20_1:example_block#inventory: java.io.FileNotFoundException: loudexplodemod_1_20_1:models/item/example_block.json
-[11Sep2024 00:59:17.573] [Worker-Main-15/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Unable to load model: 'loudexplodemod_1_20_1:example_item#inventory' referenced from: loudexplodemod_1_20_1:example_item#inventory: java.io.FileNotFoundException: loudexplodemod_1_20_1:models/item/example_item.json
-[11Sep2024 00:59:19.274] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
-[11Sep2024 00:59:19.274] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
-[11Sep2024 00:59:20.172] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on Speakers (Realtek(R) Audio)
-[11Sep2024 00:59:20.172] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
-[11Sep2024 00:59:20.271] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
-[11Sep2024 00:59:20.278] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
-[11Sep2024 00:59:20.279] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
-[11Sep2024 00:59:20.280] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
-[11Sep2024 00:59:20.280] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
-[11Sep2024 00:59:20.283] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
-[11Sep2024 00:59:20.284] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
-[11Sep2024 00:59:20.285] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
-[11Sep2024 00:59:20.285] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
-[11Sep2024 00:59:20.500] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
-[11Sep2024 00:59:20.545] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
-[11Sep2024 00:59:20.546] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
-[11Sep2024 00:59:20.546] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
-[11Sep2024 00:59:20.799] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient/]: Could not authorize you against Realms server: Invalid session id
-[11Sep2024 00:59:48.301] [Render thread/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: Injecting existing registry data into this CLIENT instance
-[11Sep2024 00:59:49.653] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 7 recipes
-[11Sep2024 00:59:49.760] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 1271 advancements
-[11Sep2024 00:59:50.302] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.20.1
-[11Sep2024 00:59:50.302] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
-[11Sep2024 00:59:51.326] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
-[11Sep2024 00:59:53.548] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[11Sep2024 00:59:53.568] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[11Sep2024 00:59:53.568] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[11Sep2024 00:59:53.586] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[11Sep2024 00:59:53.586] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[11Sep2024 00:59:53.845] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[11Sep2024 00:59:54.346] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[11Sep2024 00:59:54.838] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 43%
-[11Sep2024 00:59:55.307] [Server thread/INFO] [net.minecraftforge.server.permission.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
-[11Sep2024 00:59:55.307] [Server thread/INFO] [io.github.derec4.loudexplodemod_1_20_1.Loudexplodemod_1_20_1/]: HELLO from server starting
-[11Sep2024 00:59:55.311] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 3981 ms
-[11Sep2024 00:59:55.679] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 12, from 10
-[11Sep2024 00:59:55.681] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 12, from 0
-[11Sep2024 00:59:55.850] [Render thread/WARN] [io.netty.util.internal.SystemPropertyUtil/]: Unable to parse the boolean system property 'java.net.preferIPv6Addresses':system - using the default value: false
-[11Sep2024 00:59:56.442] [Netty Local Client IO #0/INFO] [net.minecraftforge.network.NetworkHooks/]: Connected to a modded server.
-[11Sep2024 00:59:56.542] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:e718b4bb] logged in with entity id 252 at (-76.2079867512726, 87.65100315447737, -14.080096848715435)
-[11Sep2024 00:59:56.689] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
-[11Sep2024 00:59:57.620] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 29 advancements
-[11Sep2024 00:59:58.177] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[11Sep2024 00:59:58.690] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[temp]'/minecraft:overworld
-[11Sep2024 00:59:59.088] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 00:59:59.088] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 00:59:59.215] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 00:59:59.215] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 00:59:59.341] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 00:59:59.342] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 00:59:59.467] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 00:59:59.467] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 00:59:59.594] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 00:59:59.594] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 00:59:59.719] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 00:59:59.719] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 00:59:59.845] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 00:59:59.846] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 00:59:59.971] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 00:59:59.971] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:00.096] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:00.096] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:00.187] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[temp]'/minecraft:the_end
-[11Sep2024 01:00:00.192] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[temp]'/minecraft:the_nether
-[11Sep2024 01:00:00.223] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:00.224] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:00.298] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 2591ms or 51 ticks behind
-[11Sep2024 01:00:00.349] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:00.349] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:00.476] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:00.477] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:00.602] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:00.602] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:00.727] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:00.727] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:00.852] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:00.852] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:00.979] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:00.979] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:01.104] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:01.104] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:01.229] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:01.229] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:01.354] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:01.354] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:01.479] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:01.479] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:01.604] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:01.604] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:01.729] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:01.729] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:01.855] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:01.855] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:01.980] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:01.980] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:02.105] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:02.105] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:02.231] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:02.231] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:02.356] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:02.356] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:02.481] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:02.481] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:02.620] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:02.620] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:02.747] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:02.747] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:02.872] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:02.872] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:02.997] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:02.997] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:03.122] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:03.122] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:03.247] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:03.247] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:03.373] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:03.373] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:03.498] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:03.498] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:03.624] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:03.624] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:03.750] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:03.750] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:03.875] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:03.875] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:04.000] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:04.000] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:04.125] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:04.125] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:04.251] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:04.251] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:04.376] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:04.376] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:04.501] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:04.501] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:04.626] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:04.626] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:04.751] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:04.751] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:04.877] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:04.877] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:05.002] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:05.002] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:05.127] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:05.127] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:05.252] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:05.252] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:05.377] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:05.377] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:05.502] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:05.502] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:05.752] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:05.752] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:05.878] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:05.878] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:06.003] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:06.003] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:06.128] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:06.128] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:06.253] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:06.253] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:06.379] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:06.379] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:06.504] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:06.504] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:06.629] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:06.629] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:06.754] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:06.754] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:06.879] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:06.879] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:07.005] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:07.005] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:07.130] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:07.130] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:07.256] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:07.256] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:07.381] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:07.381] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:07.506] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:07.506] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:07.631] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:07.631] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:07.756] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:07.756] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:07.882] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:07.882] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:08.007] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:08.007] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:08.132] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:08.132] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:08.258] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:08.258] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:08.384] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:08.384] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:08.509] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:08.509] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:08.634] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:08.634] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:08.759] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:08.759] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:08.885] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:08.885] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:09.010] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:09.010] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:09.135] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:09.135] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:09.261] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:09.261] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:09.386] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:09.386] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:09.516] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:09.516] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:09.643] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:09.643] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:09.768] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:09.768] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:09.910] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:09.910] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:10.035] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:10.035] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:10.160] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:10.160] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:10.288] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:10.288] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:10.413] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:10.413] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:10.538] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:10.538] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:10.663] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:10.663] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:10.788] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:10.788] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:10.913] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:10.913] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:11.038] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:11.038] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:11.164] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:11.164] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:11.289] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:11.289] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:11.414] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:11.414] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:11.539] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:11.545] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:11.670] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:11.670] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:11.795] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:11.795] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:11.920] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:11.920] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:12.048] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:12.048] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:12.173] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:12.174] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:12.426] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:12.426] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:12.552] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:12.552] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:12.678] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:12.678] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:12.806] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:12.806] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:12.806] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:12.806] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:12.932] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:12.932] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:13.182] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:13.182] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:13.182] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:13.182] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:13.307] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:13.307] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:13.433] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:13.433] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:13.684] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:13.684] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:13.810] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:13.810] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:13.935] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:13.935] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:14.060] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:14.060] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:14.186] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:14.186] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:14.311] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:14.311] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:14.436] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:14.436] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:14.561] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:14.561] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:14.686] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:14.686] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:14.811] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:14.811] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:14.936] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:14.936] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:15.061] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:15.061] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:15.186] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:15.186] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:15.311] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:15.311] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:15.436] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:15.436] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:15.561] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:15.561] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:15.686] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:15.686] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:15.811] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:15.811] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:15.936] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:15.936] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:16.061] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:16.061] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:16.186] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:16.186] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:16.311] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:16.311] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:16.436] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:16.436] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:16.562] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:16.562] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:16.687] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:16.687] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:16.813] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:16.813] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:16.938] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:16.938] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:17.063] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:17.063] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:17.188] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:17.188] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:17.317] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:17.317] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:17.442] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:17.442] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:17.567] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:17.567] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:17.693] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:17.693] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:17.818] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:17.818] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:17.944] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:17.944] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:18.069] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:18.069] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:18.194] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:18.194] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:18.319] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:18.319] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:18.444] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:18.444] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:18.569] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:18.569] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:18.694] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:18.694] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:18.820] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:18.820] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:19.070] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:19.070] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:19.196] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:19.196] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:19.321] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:19.321] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:19.446] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:19.446] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:19.571] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:19.571] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:19.657] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[11Sep2024 01:00:19.665] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[temp]'/minecraft:overworld
-[11Sep2024 01:00:19.673] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[temp]'/minecraft:the_end
-[11Sep2024 01:00:19.675] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[temp]'/minecraft:the_nether
-[11Sep2024 01:00:19.696] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:19.696] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:19.821] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:19.821] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:19.946] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:19.946] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:20.071] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:20.071] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:20.197] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:20.197] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:20.322] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:20.322] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:20.448] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:20.448] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:20.573] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:20.573] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:20.698] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:20.698] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:20.823] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:20.823] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:20.948] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:20.948] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:21.073] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:21.073] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:21.198] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:21.198] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:21.323] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:21.323] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:21.448] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:21.448] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:21.573] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:21.573] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:21.699] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:21.699] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:21.825] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:21.825] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:21.950] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:21.950] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:22.075] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:22.075] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:22.200] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:22.200] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:22.325] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:22.325] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:22.450] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:22.450] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:22.575] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:22.575] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:22.701] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:22.701] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:22.826] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:22.826] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:22.951] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:22.951] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:23.076] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:23.076] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:23.201] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:23.201] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:23.327] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:23.327] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:23.452] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:23.452] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:23.577] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:23.577] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:23.716] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:23.717] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:23.846] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:23.846] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:23.972] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:23.972] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:24.097] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:24.097] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:24.222] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:24.222] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:24.348] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:24.348] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:24.473] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:24.473] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:24.599] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:24.599] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:24.724] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:24.724] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:24.850] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:24.850] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:24.975] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:24.975] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:25.101] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:25.101] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:25.226] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:25.226] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:25.351] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:25.351] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:25.477] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:25.477] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:25.728] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:25.728] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:25.853] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:25.853] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:25.978] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:25.978] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:26.103] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:26.103] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:26.228] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:26.228] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:26.353] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:26.353] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:26.479] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:26.479] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:26.604] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:26.604] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:26.730] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:26.730] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:26.855] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:26.855] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:26.980] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:26.980] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:27.105] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:27.105] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:27.231] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:27.231] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:27.356] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:27.356] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:27.481] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:27.481] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:27.606] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:27.606] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:27.731] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:27.731] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:27.856] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:27.856] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:27.982] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:27.982] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:28.107] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:28.107] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:28.232] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:28.232] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:28.357] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:28.357] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:28.482] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:28.482] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:28.607] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:28.607] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:28.732] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:28.732] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:28.857] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:28.857] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:28.983] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:28.983] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:29.108] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:29.108] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:29.234] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:29.234] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:29.359] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:29.359] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:29.484] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:29.484] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:29.609] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:29.609] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:29.735] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:29.735] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:29.860] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:29.860] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:29.986] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:29.986] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:30.111] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:30.111] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:30.236] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:30.236] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:30.361] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:30.361] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:30.487] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:30.487] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:30.612] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:30.612] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:30.737] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:30.737] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:30.862] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:30.862] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:31.112] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:31.112] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:31.237] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:31.237] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:31.362] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:31.362] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:31.487] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:31.487] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:31.612] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:31.612] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:31.737] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:31.737] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:31.863] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:31.863] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:31.988] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:31.988] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:32.113] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:32.113] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:32.238] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:32.238] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:32.364] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:32.364] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:32.489] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:32.489] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:32.614] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:32.614] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:32.740] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:32.740] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:32.866] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:32.866] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:32.991] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:32.991] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:33.116] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:33.116] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:33.241] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:33.241] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:33.366] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:33.366] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:33.491] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:33.491] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:33.617] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:33.617] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:33.742] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:33.742] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:33.867] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:33.867] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:33.992] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:33.992] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:34.117] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:34.117] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:34.243] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:34.243] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:34.368] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:34.368] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:34.493] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:34.493] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:34.618] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:34.618] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:34.744] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:34.744] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:34.870] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:34.870] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:34.995] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:34.995] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:35.120] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:35.120] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:35.245] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:35.245] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:35.370] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:35.370] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:35.496] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:35.496] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:35.621] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:35.621] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:35.746] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:35.746] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:35.872] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:35.872] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:35.998] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:35.998] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:36.123] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:36.123] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:36.373] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:36.373] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:36.373] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:36.373] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:36.498] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:36.498] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:36.624] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:36.624] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:36.749] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:36.749] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:36.875] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:36.875] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:37.000] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:37.000] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:37.125] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:37.125] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:37.250] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:37.250] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:37.376] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:37.376] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:37.501] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:37.501] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:37.751] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:37.751] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:37.876] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:37.876] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:38.001] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:38.001] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:38.126] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:38.126] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:38.251] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:38.251] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:38.377] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:38.377] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:38.503] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:38.503] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:38.628] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:38.628] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:38.754] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:38.754] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:38.880] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:38.880] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:39.005] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:39.005] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:39.131] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:39.131] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:39.256] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:39.256] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:39.267] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Disconnected
-[11Sep2024 01:00:39.268] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
-[11Sep2024 01:00:39.278] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Stopping singleplayer server as player logged out
-[11Sep2024 01:00:39.313] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
-[11Sep2024 01:00:39.313] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
-[11Sep2024 01:00:39.313] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
-[11Sep2024 01:00:39.381] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:39.381] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:39.481] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[temp]'/minecraft:overworld
-[11Sep2024 01:00:39.507] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:39.507] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:39.632] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:39.632] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:39.727] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[temp]'/minecraft:the_end
-[11Sep2024 01:00:39.728] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[temp]'/minecraft:the_nether
-[11Sep2024 01:00:39.742] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (temp): All chunks are saved
-[11Sep2024 01:00:39.742] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[11Sep2024 01:00:39.742] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[11Sep2024 01:00:39.742] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
-[11Sep2024 01:00:39.757] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:39.757] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:39.883] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:39.883] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:40.009] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:40.009] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:40.134] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:40.134] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:40.260] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:40.260] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:40.385] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:40.385] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:40.510] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:40.510] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:40.635] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:40.635] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:40.760] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:40.760] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:40.885] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:40.885] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:41.011] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:41.011] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:41.137] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:41.137] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:41.262] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:41.262] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:41.388] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:41.388] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:41.514] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:41.514] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:41.640] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:41.640] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:41.765] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:41.765] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:41.890] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:41.890] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:42.015] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:42.015] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:42.141] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:42.141] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:42.266] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:42.266] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:42.391] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:42.391] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:42.516] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:42.516] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:42.641] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:42.641] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:42.766] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:42.766] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:43.017] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:43.017] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:43.142] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:43.142] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:43.267] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:43.267] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:43.393] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:43.393] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:43.518] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:43.518] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:43.644] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:43.644] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:43.769] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:43.769] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:43.894] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:43.894] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:44.019] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:44.019] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:44.144] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:44.144] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:44.270] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:44.270] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
-[11Sep2024 01:00:44.355] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
-[11Sep2024 01:00:44.395] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Your Volume NaN
-[11Sep2024 01:00:44.395] [Thread-12/INFO] [io.github.derec4.loudexplodemod_1_20_1.MicLevelDetectorNew/]: Threshold Value Set 86.5
+[12Sep2024 21:47:05.993] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeclientuserdev, --version, MOD_DEV, --assetIndex, 5, --assetsDir, C:\Users\derex\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.3.7, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mixin.config, loudexplodemod_1_20_1.mixins.json]
+[12Sep2024 21:47:06.004] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.6 by Eclipse Adoptium; OS Windows 10 arch amd64 version 10.0
+[12Sep2024 21:47:06.130] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
+[12Sep2024 21:47:06.431] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.6
+[12Sep2024 21:47:06.887] [main/INFO] [EARLYDISPLAY/]: Requested GL version 4.6 got version 4.6
+[12Sep2024 21:47:07.011] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/derex/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23129!/ Service=ModLauncher Env=CLIENT
+[12Sep2024 21:47:07.101] [pool-2-thread-1/INFO] [EARLYDISPLAY/]: GL info: NVIDIA GeForce RTX 3060 Laptop GPU/PCIe/SSE2 GL version 4.6.0 NVIDIA 556.12, NVIDIA Corporation
+[12Sep2024 21:47:07.417] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\derex\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.3.7\5d72a04334eea2494912f0d91216648462bb32c3\javafmllanguage-1.20.1-47.3.7.jar is missing mods.toml file
+[12Sep2024 21:47:07.427] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\derex\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.3.7\74fd0ee16e74766d45d2efe7c74b6d0e121677df\lowcodelanguage-1.20.1-47.3.7.jar is missing mods.toml file
+[12Sep2024 21:47:07.438] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\derex\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.3.7\cf753f5bc19311c127ea07e1ee43d5f9477df22b\mclanguage-1.20.1-47.3.7.jar is missing mods.toml file
+[12Sep2024 21:47:07.448] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\derex\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.3.7\b6a4840dfdc56e2ae2eccdd1bf233959493d11ea\fmlcore-1.20.1-47.3.7.jar is missing mods.toml file
+[12Sep2024 21:47:07.580] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[12Sep2024 21:47:09.298] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeclientuserdev' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, C:\Users\derex\.gradle\caches\forge_gradle\assets, --assetIndex, 5]
+[12Sep2024 21:47:09.409] [main/WARN] [mixin/]: Reference map 'loudexplodemod_1_20_1.refmap.json' for loudexplodemod_1_20_1.mixins.json could not be read. If this is a development environment you can ignore this message
+[12Sep2024 21:47:13.288] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 188 Datafixer optimizations took 120 milliseconds
+[12Sep2024 21:47:14.947] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/derex/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.3.7_mapped_official_1.20.1/forge-1.20.1-47.3.7_mapped_official_1.20.1.jar%23191!/assets/.mcassetsroot' uses unexpected schema
+[12Sep2024 21:47:14.948] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/derex/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.3.7_mapped_official_1.20.1/forge-1.20.1-47.3.7_mapped_official_1.20.1.jar%23191!/data/.mcassetsroot' uses unexpected schema
+[12Sep2024 21:47:14.994] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[12Sep2024 21:47:15.009] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[12Sep2024 21:47:15.233] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.1 build 7
+[12Sep2024 21:47:15.689] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.3.7, for MC 1.20.1 with MCP 20230612.114412
+[12Sep2024 21:47:15.691] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.3.7 Initialized
+[12Sep2024 21:47:17.048] [Render thread/INFO] [net.minecraftforge.gametest.ForgeGameTestHooks/]: Enabled Gametest Namespaces: [loudexplodemod_1_20_1]
+[12Sep2024 21:47:17.233] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla, mod_resources
+[12Sep2024 21:47:17.283] [Worker-Main-9/INFO] [io.github.derec4.loudexplodemod_1_20_1.Loudexplodemod_1_20_1/]: HELLO FROM COMMON SETUP
+[12Sep2024 21:47:17.284] [Worker-Main-9/INFO] [io.github.derec4.loudexplodemod_1_20_1.Loudexplodemod_1_20_1/]: DIRT BLOCK >> minecraft:dirt
+[12Sep2024 21:47:17.396] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
+[12Sep2024 21:47:17.401] [Worker-Main-15/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-15.0.06.hex, loading
+[12Sep2024 21:47:17.558] [Worker-Main-4/INFO] [io.github.derec4.loudexplodemod_1_20_1.Loudexplodemod_1_20_1/]: HELLO FROM CLIENT SETUP
+[12Sep2024 21:47:17.558] [Worker-Main-4/INFO] [io.github.derec4.loudexplodemod_1_20_1.Loudexplodemod_1_20_1/]: MINECRAFT NAME >> Dev
+[12Sep2024 21:47:17.983] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: OUTDATED Current: 47.3.7 Target: 47.3.10
+[12Sep2024 21:47:18.426] [Worker-Main-11/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Exception loading blockstate definition: 'loudexplodemod_1_20_1:blockstates/example_block.json' missing model for variant: 'loudexplodemod_1_20_1:example_block#'
+[12Sep2024 21:47:18.436] [Worker-Main-11/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Unable to load model: 'loudexplodemod_1_20_1:example_block#inventory' referenced from: loudexplodemod_1_20_1:example_block#inventory: java.io.FileNotFoundException: loudexplodemod_1_20_1:models/item/example_block.json
+[12Sep2024 21:47:18.436] [Worker-Main-11/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Unable to load model: 'loudexplodemod_1_20_1:example_item#inventory' referenced from: loudexplodemod_1_20_1:example_item#inventory: java.io.FileNotFoundException: loudexplodemod_1_20_1:models/item/example_item.json
+[12Sep2024 21:47:20.171] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
+[12Sep2024 21:47:20.171] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[12Sep2024 21:47:20.430] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on Speakers (Realtek(R) Audio)
+[12Sep2024 21:47:20.431] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
+[12Sep2024 21:47:20.543] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
+[12Sep2024 21:47:20.550] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
+[12Sep2024 21:47:20.553] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[12Sep2024 21:47:20.554] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[12Sep2024 21:47:20.554] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
+[12Sep2024 21:47:20.556] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[12Sep2024 21:47:20.558] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
+[12Sep2024 21:47:20.559] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[12Sep2024 21:47:20.559] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[12Sep2024 21:47:20.745] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
+[12Sep2024 21:47:20.802] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
+[12Sep2024 21:47:20.804] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[12Sep2024 21:47:20.804] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[12Sep2024 21:47:21.004] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient/]: Could not authorize you against Realms server: Invalid session id
+[12Sep2024 21:47:31.608] [Render thread/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: Injecting existing registry data into this CLIENT instance
+[12Sep2024 21:47:33.299] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 7 recipes
+[12Sep2024 21:47:33.379] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 1271 advancements
+[12Sep2024 21:47:33.797] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.20.1
+[12Sep2024 21:47:33.797] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[12Sep2024 21:47:34.790] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[12Sep2024 21:47:37.009] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[12Sep2024 21:47:37.029] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[12Sep2024 21:47:37.051] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[12Sep2024 21:47:37.051] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[12Sep2024 21:47:37.051] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[12Sep2024 21:47:37.317] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[12Sep2024 21:47:37.823] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[12Sep2024 21:47:38.315] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 28%
+[12Sep2024 21:47:38.687] [Server thread/INFO] [net.minecraftforge.server.permission.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
+[12Sep2024 21:47:38.687] [Server thread/INFO] [io.github.derec4.loudexplodemod_1_20_1.Loudexplodemod_1_20_1/]: HELLO from server starting
+[12Sep2024 21:47:38.690] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 3882 ms
+[12Sep2024 21:47:38.895] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 12, from 10
+[12Sep2024 21:47:38.896] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 12, from 0
+[12Sep2024 21:47:39.036] [Render thread/WARN] [io.netty.util.internal.SystemPropertyUtil/]: Unable to parse the boolean system property 'java.net.preferIPv6Addresses':system - using the default value: false
+[12Sep2024 21:47:39.575] [Netty Local Client IO #0/INFO] [net.minecraftforge.network.NetworkHooks/]: Connected to a modded server.
+[12Sep2024 21:47:39.626] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:e1ea085f] logged in with entity id 237 at (-53.30000001192093, 110.53020343953831, -12.300000011920929)
+[12Sep2024 21:47:39.696] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
+[12Sep2024 21:47:40.546] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 29 advancements
+[12Sep2024 21:47:41.146] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[12Sep2024 21:47:41.256] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[temp]'/minecraft:overworld
+[12Sep2024 21:47:43.073] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[temp]'/minecraft:the_end
+[12Sep2024 21:47:43.076] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[temp]'/minecraft:the_nether
+[12Sep2024 21:47:43.116] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 2180ms or 43 ticks behind
+[12Sep2024 21:48:01.939] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[12Sep2024 21:48:01.947] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[temp]'/minecraft:overworld
+[12Sep2024 21:48:01.955] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[temp]'/minecraft:the_end
+[12Sep2024 21:48:01.956] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[temp]'/minecraft:the_nether
+[12Sep2024 21:48:02.447] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Disconnected
+[12Sep2024 21:48:02.447] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
+[12Sep2024 21:48:02.462] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Stopping singleplayer server as player logged out
+[12Sep2024 21:48:02.500] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[12Sep2024 21:48:02.500] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[12Sep2024 21:48:02.500] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[12Sep2024 21:48:02.701] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[temp]'/minecraft:overworld
+[12Sep2024 21:48:02.931] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[temp]'/minecraft:the_end
+[12Sep2024 21:48:02.933] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[temp]'/minecraft:the_nether
+[12Sep2024 21:48:02.949] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (temp): All chunks are saved
+[12Sep2024 21:48:02.949] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[12Sep2024 21:48:02.949] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[12Sep2024 21:48:02.949] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+[12Sep2024 21:48:03.797] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!

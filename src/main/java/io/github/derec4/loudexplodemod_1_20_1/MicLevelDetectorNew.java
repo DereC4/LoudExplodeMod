@@ -42,10 +42,8 @@ public class MicLevelDetectorNew {
                 byte[] buffer = new byte[BUFFER_SIZE];
                 ByteArrayOutputStream out = new ByteArrayOutputStream();
                 short[] shortBuffer;
-                int numBytesRead;
 
                 while (true) {
-                    numBytesRead = microphone.read(buffer, 0, buffer.length);
                     shortBuffer = Utils.bytesToShorts(buffer);
 
                     double highestDb = Utils.getHighestAudioLevel(shortBuffer);

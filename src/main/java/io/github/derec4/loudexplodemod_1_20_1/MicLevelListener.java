@@ -32,7 +32,7 @@ public class MicLevelListener {
 //            micLevelDetector.setDB_THRESHOLD(player.level().getGameRules().getInt(EnableExplodeGamerule.MIC_THRESHOLD_GAMERULE));
             if (micLevelDetector != null) {
                 double dbThreshold = Config.dbThreshold;
-                micLevelDetector.setDB_THRESHOLD(dbThreshold);
+                micLevelDetector.setDbThreshold(dbThreshold);
                 execute(player.level(), player.getX(), player.getY(), player.getZ(), player);
             }
         }
@@ -46,7 +46,7 @@ public class MicLevelListener {
 
         double dbThreshold = Config.dbThreshold;
         System.out.println("Config reloaded: dbThreshold = " + dbThreshold);
-        micLevelDetector.setDB_THRESHOLD(dbThreshold);
+        micLevelDetector.setDbThreshold(dbThreshold);
     }
 
     @SubscribeEvent
@@ -58,7 +58,7 @@ public class MicLevelListener {
 
         double dbThreshold = Config.dbThreshold;
         System.out.println("Config reloaded: dbThreshold = " + dbThreshold);
-        micLevelDetector.setDB_THRESHOLD(dbThreshold);
+        micLevelDetector.setDbThreshold(dbThreshold);
     }
 
     private static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
