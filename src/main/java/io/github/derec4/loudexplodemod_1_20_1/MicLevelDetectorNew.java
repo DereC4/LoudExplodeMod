@@ -9,7 +9,7 @@ import java.util.Arrays;
 
 public class MicLevelDetectorNew {
     private double dbThreshold = Config.dbThreshold;  // Default from config
-    private static final int BUFFER_SIZE = 1024;
+    private static final int BUFFER_SIZE = 4096;
     private static final int SAMPLE_RATE = 16000; // Adapted from AudioDetector
     private static final Logger LOGGER = LogUtils.getLogger();
     private volatile boolean micLevelHigh = false;
@@ -50,9 +50,8 @@ public class MicLevelDetectorNew {
                     double highestDb = Utils.getHighestAudioLevel(shortBuffer);
                     micLevelHigh = highestDb >= dbThreshold;
 
-                    System.out.println("Your Volume: " + highestDb + " dB");
-                    System.out.println("Threshold Value Set: " + dbThreshold);
-
+                    LOGGER.info("Your Volume: {} dB", highestDb);
+                    LOGGER.info("Threshold Value Set: {}", dbThreshold);
 
                     out.reset(); // Reset buffer after each read
                 }
