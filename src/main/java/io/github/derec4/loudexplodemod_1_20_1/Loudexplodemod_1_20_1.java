@@ -1,6 +1,7 @@
 package io.github.derec4.loudexplodemod_1_20_1;
 
 import com.mojang.logging.LogUtils;
+import me.shedaniel.autoconfig.AutoConfig;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.food.FoodProperties;
@@ -119,5 +120,9 @@ public class Loudexplodemod_1_20_1 {
             LOGGER.info("HELLO FROM CLIENT SETUP");
             LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
         }
+    }
+
+    public static io.github.derec4.loudexplodemod_1_20_1.ModConfig getConfig() {
+        return AutoConfig.getConfigHolder(io.github.derec4.loudexplodemod_1_20_1.ModConfig.class).getConfig();
     }
 }
