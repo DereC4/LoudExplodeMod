@@ -139,7 +139,12 @@ repositories {
     // flatDir {
     //     dir 'libs'
     // }
-    maven { url "https://maven.shedaniel.me/" }
+//    maven { url "https://maven.shedaniel.me/" }
+    maven {
+        // Location of the maven that hosts Team Resourceful's jars.
+        name = "Team Resourceful Maven"
+        url = "https://maven.teamresourceful.com/repository/maven-public/"
+    }
 }
 
 dependencies {
@@ -166,7 +171,9 @@ dependencies {
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
 
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
-    implementation fg.deobf("me.shedaniel.cloth:cloth-config-forge:11.1.118")
+//    implementation fg.deobf("me.shedaniel.cloth:cloth-config-forge:11.1.118")
+    modImplementation "com.teamresourceful.resourcefulconfig:resourcefulconfig-forge-$mc_version:$rconfig_version"
+
 
 }
 
