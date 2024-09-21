@@ -4,16 +4,17 @@ import com.mojang.logging.LogUtils;
 import org.slf4j.Logger;
 
 import javax.sound.sampled.*;
-import java.io.ByteArrayOutputStream;
 import java.util.Arrays;
 
 public class MicLevelDetectorNew {
     private double dbThreshold = Config.dbThreshold;  // Default from config
-    private static final int BUFFER_SIZE = 4096;
-    private static final int SAMPLE_RATE = 16000; // Adapted from AudioDetector
+    private static final int BUFFER_SIZE = 1024;
+    private static final int SAMPLE_RATE = 44100; // Updated to match the example
     private static final Logger LOGGER = LogUtils.getLogger();
     private volatile boolean micLevelHigh = false;
+    private volatile boolean running = true;
     private TargetDataLine microphone;
+    private Thread listeningThread;
 
     public MicLevelDetectorNew() {
         startListening();
@@ -25,7 +26,7 @@ public class MicLevelDetectorNew {
     }
 
     private void startListening() {
-        new Thread(() -> {
+        listeningThread = new Thread(() -> {
             AudioFormat format = new AudioFormat(SAMPLE_RATE, 16, 1, true, true);
             try {
                 DataLine.Info info = new DataLine.Info(TargetDataLine.class, format);
@@ -40,25 +41,24 @@ public class MicLevelDetectorNew {
                 microphone.start();
 
                 byte[] buffer = new byte[BUFFER_SIZE];
-                ByteArrayOutputStream out = new ByteArrayOutputStream();
-                short[] shortBuffer;
                 int numBytesRead;
                 while (true) {
                     numBytesRead = microphone.read(buffer, 0, buffer.length);
-                    shortBuffer = Utils.bytesToShorts(buffer);
+                    double maxDb = Utils.calculateMaxDb(buffer, numBytesRead);
+                    micLevelHigh = maxDb >= dbThreshold;
 
-                    double highestDb = Utils.getHighestAudioLevel(shortBuffer);
-                    micLevelHigh = highestDb >= dbThreshold;
-
-                    LOGGER.info("Your Volume: {} dB", highestDb);
+                    LOGGER.info("Your Volume: {} dB", maxDb);
                     LOGGER.info("Threshold Value Set: {}", dbThreshold);
-
-                    out.reset(); // Reset buffer after each read
                 }
             } catch (LineUnavailableException e) {
                 LOGGER.error("Microphone line unavailable", e);
+            } finally {
+                if (microphone != null && microphone.isOpen()) {
+                    microphone.close();
+                }
             }
-        }).start();
+        });
+        listeningThread.start();
     }
 
     public boolean isMicLevelHigh() {
@@ -67,5 +67,18 @@ public class MicLevelDetectorNew {
 
     public void setDbThreshold(double threshold) {
         dbThreshold = threshold;
+    }
+
+    public void stopListening() {
+        running = false;
+        if (microphone != null && microphone.isOpen()) {
+            microphone.close();
+        }
+        try {
+            listeningThread.join();
+        } catch (InterruptedException e) {
+            LOGGER.error("Error stopping the listening thread", e);
+            Thread.currentThread().interrupt();
+        }
     }
 }

@@ -8,11 +8,13 @@ import net.minecraft.world.phys.Vec2;
  */
 public class Utils {
 
-    public static void sleep(int ms) {
-        try {
-            Thread.sleep(ms);
-        } catch (InterruptedException ex) {
+    public static double calculateMaxDb(byte[] buffer, int bytesRead) {
+        double max = 0;
+        for (int i = 0; i < bytesRead; i += 2) {
+            int value = (buffer[i] << 8) | (buffer[i + 1] & 0xFF);
+            max = Math.max(max, Math.abs(value));
         }
+        return 20 * Math.log10(max / 32768.0);
     }
 
     public static short[] bytesToShorts(byte[] bytes) {

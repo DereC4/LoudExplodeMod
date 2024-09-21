@@ -8,6 +8,7 @@ import java.io.ByteArrayOutputStream;
 
 public class MicLevelDetector {
     private double dbThreshold = Config.dbThreshold;
+    private static final double OFFSET = -2.0;
     private static final int BUFFER_SIZE = 4096;
     private static final Logger LOGGER = LogUtils.getLogger();
     private volatile boolean micLevelHigh = false;

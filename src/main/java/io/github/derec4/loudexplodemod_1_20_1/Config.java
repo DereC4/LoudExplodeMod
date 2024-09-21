@@ -24,7 +24,7 @@ public class Config {
 
     // New config option for DB_THRESHOLD
     static final ForgeConfigSpec.DoubleValue DB_THRESHOLD = BUILDER.comment("The decibel threshold for microphone " +
-            "input to trigger the explosion").defineInRange("dbThreshold", -2.0, -30.0, 30.0);
+            "input to trigger the explosion").defineInRange("dbThreshold", 0, 0, 30.0);
 
     // Build the config spec
     static final ForgeConfigSpec SPEC = BUILDER.build();

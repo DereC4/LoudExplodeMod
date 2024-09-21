@@ -1,7 +1,6 @@
 package io.github.derec4.loudexplodemod_1_20_1;
 
 import com.mojang.logging.LogUtils;
-import com.teamresourceful.resourcefulconfig.common.config.Configurator;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.food.FoodProperties;
@@ -15,7 +14,6 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -58,7 +56,7 @@ public class Loudexplodemod_1_20_1 {
         output.accept(EXAMPLE_ITEM.get()); // Add the example item to the tab. For your own tabs, this method is preferred over the event
     }).build());
 
-    public static final Configurator CONFIGURATOR = new Configurator();
+//    public static final Configurator CONFIGURATOR = new Configurator();
 
     public Loudexplodemod_1_20_1() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
@@ -82,7 +80,7 @@ public class Loudexplodemod_1_20_1 {
         // Register our mod's ForgeConfigSpec so that Forge can create and load the config file for us
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.SPEC);
 
-        CONFIGURATOR.registerConfig(ModResourcefulConfig.class);
+//        CONFIGURATOR.registerConfig(ModResourcefulConfig.class);
 
         MinecraftForge.EVENT_BUS.register(MicLevelListener.class);
     }
