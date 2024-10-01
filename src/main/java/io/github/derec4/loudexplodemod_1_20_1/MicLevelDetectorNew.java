@@ -40,15 +40,15 @@ public class MicLevelDetectorNew {
                 microphone.open(format);
                 microphone.start();
 
-                byte[] buffer = new byte[BUFFER_SIZE];
+                byte[] buffer = new byte[BUFFER_SIZE       ];
                 int numBytesRead;
                 while (true) {
                     numBytesRead = microphone.read(buffer, 0, buffer.length);
                     double maxDb = Utils.calculateMaxDb(buffer, numBytesRead);
-                    micLevelHigh = maxDb >= dbThreshold;
+                    micLevelHigh = maxDb >= translateThreshold(dbThreshold);
 
                     LOGGER.info("Your Volume: {} dB", maxDb);
-                    LOGGER.info("Threshold Value Set: {}", dbThreshold);
+                    LOGGER.info("Threshold Value Set: {}", translateThreshold(dbThreshold));
                 }
             } catch (LineUnavailableException e) {
                 LOGGER.error("Microphone line unavailable", e);
@@ -80,5 +80,10 @@ public class MicLevelDetectorNew {
             LOGGER.error("Error stopping the listening thread", e);
             Thread.currentThread().interrupt();
         }
+    }
+
+    private double translateThreshold(double userFriendlyThreshold) {
+        // Translate user-friendly threshold (0 to 30) to actual decibel value (-30 to 0)
+        return (userFriendlyThreshold / 100.0) * 60.0 - 30.0;
     }
 }
